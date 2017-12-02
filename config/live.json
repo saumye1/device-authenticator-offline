@@ -1,0 +1,9 @@
+{
+    "port" : 3004,
+    "databaseSettings" : {
+        "database" : "mongodb://127.0.0.1/device-authenticator"
+    },
+    "mongoCollections" : {
+        "users" : "tb_users"
+    }
+}

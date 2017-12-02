@@ -1,0 +1,25 @@
+{
+  "name": "device-authenticator-offline",
+  "version": "1.0.0",
+  "description": "Authenticates proximity of a device from a user based on a password that changes every 30 seconds. The password is available on the device even when the device is not connected to any network.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saumye1/device-authenticator-offline.git"
+  },
+  "author": "Saumye Malhotra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saumye1/device-authenticator-offline/issues"
+  },
+  "homepage": "https://github.com/saumye1/device-authenticator-offline#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "config": "^1.28.1",
+    "crypto-js": "^3.1.9-1",
+    "express": "^4.16.2"
+  }
+}

@@ -1,8 +1,12 @@
 var app         = require('express')();
 var config      = require('config');
+var bodyParser  = require('body-parser');
 var MongoClient = require('mongodb').MongoClient;
 
 var users    = require('./routes/user');
+
+app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
+app.use(bodyParser.json({limit: '50mb'}));
 
 app.post('/add_user', users.addUser);
 app.post('/user_login', users.userLogin);
